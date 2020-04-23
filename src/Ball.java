@@ -102,10 +102,14 @@ public class Ball {
 
     public void keyPressed(KeyEvent e) {
         if (e.getKeyCode() == e.VK_SPACE) {
-            setYDirection(-1);
-            setXDirection(-1);
+            if (Direction == 1) {
+                xDirection = -1;
+            }
+            else if (Direction == -1) {
+                xDirection = 1;
+            }
+            }
         }
-    }
 
         public void update(Rectangle r){
             collision(r);
