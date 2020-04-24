@@ -9,4 +9,7 @@ Det viktigaste är att spelet fungerar på en basnivå så att allt går att kö
 Bollen börjar om i mitten när den rör vänster eller höger kant. Den får även motsatt riktning än vad den hade innan den rörde väggen. 
 
 23/04 
-Experimenterat med score system men inte lyckats bli klar så ingen kod för det. Ska fixa så att spelet startas med space och så att den får motsatt riktning från vad den hade efter man klickat space. 
+Experimenterat med score system men inte lyckats bli klar så ingen kod för det. Ska fixa så att spelet startas med space och så att den får motsatt riktning från vad den hade efter man klickat space.
+
+24/04 
+Spelet startas med space. Score system funkar nästan med en JOptionPane som kommer upp varje gång någon får poäng.  

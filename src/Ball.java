@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.util.Random;
@@ -8,6 +9,10 @@ public class Ball {
     private Rectangle boundingBox;
     private int height = 10;
     private int width = 10;
+    private int xMomentum;
+    private int leftscore;
+    private int rightscore;
+
 
     public Ball(int x, int y) {
         pixels = new int[width * height];
@@ -87,31 +92,42 @@ public class Ball {
         if (boundingBox.x <= 0) {
             setXDirection(0);
             setYDirection(0);
+            xMomentum = 1;
             boundingBox.x = 200;
             boundingBox.y = 120;
+            rightscore++;
         }
         if (boundingBox.x >= 400) {
             setXDirection(0);
             setYDirection(0);
+            xMomentum = -1;
             boundingBox.x = 200;
             boundingBox.y = 120;
+            leftscore++;
+            JOptionPane.showMessageDialog("Left side: " + leftscore + "Right side: " + rightscore);
         }
-        if (boundingBox.y <= 0) setYDirection(+1);
-        if (boundingBox.y >= 285) setYDirection(-1);
+        if (boundingBox.y <= 0) {
+            setYDirection(+1);
+        }
+        if (boundingBox.y >= 285) {
+            setYDirection(-1);
+        }
     }
 
     public void keyPressed(KeyEvent e) {
-        if (e.getKeyCode() == e.VK_SPACE) {
-            if (Direction == 1) {
-                xDirection = -1;
-            }
-            else if (Direction == -1) {
-                xDirection = 1;
-            }
+        if (xMomentum == 1 || xMomentum == -1) {
+            if (e.getKeyCode() == e.VK_SPACE) {
+                if (xMomentum == 1) {
+                    setXDirection(1);
+                    setYDirection(1);
+                } else if (xMomentum == -1) {
+                    setXDirection(-1);
+                    setYDirection(1);
+                }
             }
         }
-
-        public void update(Rectangle r){
+    }
+        public void update (Rectangle r){
             collision(r);
             move();
             collision(r);
