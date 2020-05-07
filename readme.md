@@ -13,3 +13,6 @@ Experimenterat med score system men inte lyckats bli klar så ingen kod för det
 
 24/04 
 Spelet startas med space. Score system funkar nästan med en JOptionPane som kommer upp varje gång någon får poäng.  
+
+07/05 
+Score system funkar som en JOptionPane. Spelet startas fortfarande med space, men jag upptäckte att det gick att ändra riktning på bollen med space under spelets gång vilket jag tog bort genom att när bollen är stilla, så kan man klicka space men inte annars. 

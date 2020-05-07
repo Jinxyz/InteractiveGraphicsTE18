@@ -96,6 +96,7 @@ public class Ball {
             boundingBox.x = 200;
             boundingBox.y = 120;
             rightscore++;
+            JOptionPane.showMessageDialog(null,"Left side: " + leftscore + "\n" + "Right side: " + rightscore);
         }
         if (boundingBox.x >= 400) {
             setXDirection(0);
@@ -104,7 +105,7 @@ public class Ball {
             boundingBox.x = 200;
             boundingBox.y = 120;
             leftscore++;
-            JOptionPane.showMessageDialog("Left side: " + leftscore + "Right side: " + rightscore);
+            JOptionPane.showMessageDialog(null,"Left side: " + leftscore + "\n" + "Right side: " + rightscore);
         }
         if (boundingBox.y <= 0) {
             setYDirection(+1);
@@ -115,18 +116,21 @@ public class Ball {
     }
 
     public void keyPressed(KeyEvent e) {
-        if (xMomentum == 1 || xMomentum == -1) {
-            if (e.getKeyCode() == e.VK_SPACE) {
-                if (xMomentum == 1) {
-                    setXDirection(1);
-                    setYDirection(1);
-                } else if (xMomentum == -1) {
-                    setXDirection(-1);
-                    setYDirection(1);
+        if (xDirection == 0) {
+            if (xMomentum == 1 || xMomentum == -1) {
+                if (e.getKeyCode() == e.VK_SPACE) {
+                    if (xMomentum == 1) {
+                        setXDirection(1);
+                        setYDirection(1);
+                    } else if (xMomentum == -1) {
+                        setXDirection(-1);
+                        setYDirection(1);
+                    }
                 }
             }
         }
     }
+
         public void update (Rectangle r){
             collision(r);
             move();
