@@ -8,7 +8,7 @@ public class Paddle {
     private int[] pixels;
     private Rectangle boundingBox;
     private int width = 10;
-    private int height = 60;
+    private int height = 40;
 
     public Paddle(int x, int y, int col){
         boundingBox = new Rectangle(x, y, width, height);

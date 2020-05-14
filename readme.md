@@ -16,3 +16,6 @@ Spelet startas med space. Score system funkar nästan med en JOptionPane som kom
 
 07/05 
 Score system funkar som en JOptionPane. Spelet startas fortfarande med space, men jag upptäckte att det gick att ändra riktning på bollen med space under spelets gång vilket jag tog bort genom att när bollen är stilla, så kan man klicka space men inte annars. 
+
+14/05
+Oproduktiv lektion, arbetat med att göra spelet svårare eftersom det var nästan omöjligt att förlora om man försökte spela. Paddlens höjd är minskad men inget annat gjort. 
