@@ -19,3 +19,6 @@ Score system funkar som en JOptionPane. Spelet startas fortfarande med space, me
 
 14/05
 Oproduktiv lektion, arbetat med att göra spelet svårare eftersom det var nästan omöjligt att förlora om man försökte spela. Paddlens höjd är minskad men inget annat gjort. 
+
+15/05 
+Arbetat med att öka höjd på paddles beroende på poängskillnaden men jag har inte fått någonting att fungera. 

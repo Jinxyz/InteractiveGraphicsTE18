@@ -13,7 +13,6 @@ public class Ball {
     private int leftscore;
     private int rightscore;
 
-
     public Ball(int x, int y) {
         pixels = new int[width * height];
 

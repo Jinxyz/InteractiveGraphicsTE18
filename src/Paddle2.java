@@ -62,8 +62,8 @@ public class Paddle2 {
         if(boundingBox.y <= 0) {
             boundingBox.y = 0;
         }
-        if(boundingBox.y >= 240) {
-            boundingBox.y = 240;
+        if(boundingBox.y >= 260) {
+            boundingBox.y = 260;
         }
     }
 
