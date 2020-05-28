@@ -22,3 +22,8 @@ Oproduktiv lektion, arbetat med att göra spelet svårare eftersom det var näst
 
 15/05 
 Arbetat med att öka höjd på paddles beroende på poängskillnaden men jag har inte fått någonting att fungera. 
+
+21/05
+Allt fungerar som det ska. 
+
+https://github.com/Jinxyz/InteractiveGraphicsTE18/wiki/Post-mortem
